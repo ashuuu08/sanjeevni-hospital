@@ -1006,15 +1006,15 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="lg:col-span-7 bg-slate-100 rounded-3xl overflow-hidden shadow-2xl border border-gray-200 aspect-[4/3] flex items-center justify-center relative">
-            <div className="text-center p-8 space-y-4">
-              <MapPin className="w-16 h-16 text-red-500 mx-auto animate-bounce flex-shrink-0" />
-              <h3 className="text-2xl font-bold text-gray-800 font-heading">Interactive Google Maps Embed Placeholder</h3>
-              <p className="text-gray-600 text-sm max-w-md mx-auto font-normal">Located centrally on Main Road Anuppur, 500 meters from Anuppur Junction Railway Station.</p>
-              <a href="https://maps.google.com" target="_blank" rel="noreferrer" className="inline-block mt-4 bg-[#0F4C81] text-white font-bold px-6 py-3 rounded-xl shadow-md hover:bg-blue-900 transition-colors">
-                Open in Google Maps
-              </a>
-            </div>
+          <div className="lg:col-span-7 bg-slate-100 rounded-3xl overflow-hidden shadow-2xl border border-gray-200 aspect-[4/3] relative">
+            <iframe 
+              title="Sanjeevni Hospital Location" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.5186640605923!2d81.6859346!3d23.102867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3987bf0015555555%3A0x3987bf0015555555!2sAnuppur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+              className="absolute inset-0 w-full h-full border-0"
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
 
         </div>

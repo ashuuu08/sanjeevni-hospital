@@ -56,12 +56,15 @@ const ContactPage = () => (
 
         {/* MAP & ADDRESS */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="space-y-8">
-          <div className="bg-gray-200 rounded-3xl overflow-hidden aspect-video flex items-center justify-center">
-            <div className="text-center p-8">
-              <MapPin className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-500 font-bold">Google Maps Embed</p>
-              <p className="text-gray-400 text-sm mt-2">Sanjeevni Hospital, Main Road, Anuppur, M.P. 484224</p>
-            </div>
+          <div className="bg-gray-200 rounded-3xl overflow-hidden aspect-video relative shadow-inner">
+            <iframe 
+              title="Sanjeevni Hospital Location" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.5186640605923!2d81.6859346!3d23.102867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3987bf0015555555%3A0x3987bf0015555555!2sAnuppur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+              className="absolute inset-0 w-full h-full border-0"
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
           <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
             <h3 className="text-xl font-heading font-bold text-gray-900 mb-4 flex items-center"><MapPin className="w-6 h-6 text-[#0F4C81] mr-2" /> Hospital Address</h3>
