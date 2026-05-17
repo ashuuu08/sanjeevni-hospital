@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Activity } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import AppointmentModal from './components/AppointmentModal';
 import logo from './assets/Logo.jpg';
 
 // Pages
@@ -48,6 +49,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <AppointmentModal />
       
       {/* ════════════════════════════════════════════════════════════════════════
           PREMIUM SPLASH LOADING SCREEN (Cinematic Initializer)
