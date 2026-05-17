@@ -68,17 +68,18 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300">
       {/* TOP EMERGENCY BAR */}
-      <div className={`bg-[#0F4C81] text-white transition-all duration-300 overflow-hidden ${isScrolled ? 'h-0 opacity-0 py-0' : 'h-[36px] py-1.5'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs font-medium h-full">
-          <div className="flex items-center space-x-6">
-            <span className="hidden sm:flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-teal-300 flex-shrink-0" /> 24/7 Emergency & Trauma Care</span>
+      <div className={`bg-[#0F4C81] text-white transition-all duration-300 overflow-hidden ${isScrolled ? 'max-h-0 opacity-0 py-0' : 'max-h-16 py-1.5'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center sm:justify-between items-center text-xs font-medium h-full">
+          <div className="hidden sm:flex items-center space-x-6">
+            <span className="hidden md:flex items-center gap-1.5"><Clock className="w-3.5 h-3.5 text-teal-300 flex-shrink-0" /> 24/7 Emergency Care</span>
             <a href="mailto:info@sanjeevnihospital.com" className="flex items-center gap-1.5 hover:text-teal-200 transition-colors"><Mail className="w-3.5 h-3.5 text-teal-300 flex-shrink-0" /> info@sanjeevnihospital.com</a>
           </div>
-          <div className="flex items-center space-x-6">
-            <Link to="/patient-guidelines" className="hover:text-teal-300 transition-colors hidden md:block">Patient Guide</Link>
-            <Link to="/contact" className="hover:text-teal-300 transition-colors hidden md:block">Helpdesk</Link>
-            <a href="tel:+919876543210" className="flex items-center text-yellow-300 font-bold bg-white/15 px-3 py-1 rounded-full hover:bg-white/20 transition-colors">
-              <AlertCircle className="w-3.5 h-3.5 mr-1.5 animate-pulse text-red-400 flex-shrink-0" /> Emergency: +91 98765 43210
+          <div className="flex items-center justify-center space-x-6 w-full sm:w-auto">
+            <Link to="/patient-guidelines" className="hover:text-teal-300 transition-colors hidden lg:block">Patient Guide</Link>
+            <Link to="/contact" className="hover:text-teal-300 transition-colors hidden lg:block">Helpdesk</Link>
+            <a href="tel:+919876543210" className="flex items-center justify-center text-yellow-300 font-bold bg-white/15 px-4 py-1 sm:py-1 rounded-full hover:bg-white/20 transition-colors text-center w-full sm:w-auto whitespace-nowrap tracking-wide">
+              <AlertCircle className="w-3.5 h-3.5 mr-1.5 animate-pulse text-red-400 flex-shrink-0 inline" /> 
+              <span>Emergency Hotline: +91 98765 43210</span>
             </a>
           </div>
         </div>
