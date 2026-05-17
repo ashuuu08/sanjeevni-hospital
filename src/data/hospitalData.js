@@ -9,6 +9,8 @@ export const departmentsData = [
     tech: ['Advanced Pathology Lab', '24/7 Monitoring', 'Electronic Health Records'],
     doctors: ['dr-rajesh-sharma']
   },
+
+
   {
     id: 'cardiology',
     name: 'Cardiology',
@@ -19,6 +21,8 @@ export const departmentsData = [
     tech: ['Philips Color Doppler', 'Advanced TMT Machine', 'Defibrillators', 'Cardiac Monitors'],
     doctors: ['dr-anil-kapoor']
   },
+
+  
   {
     id: 'orthopedics',
     name: 'Orthopedics & Trauma',
