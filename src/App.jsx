@@ -140,4 +140,11 @@ function App() {
             
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
-        </main
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
