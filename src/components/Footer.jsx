@@ -70,13 +70,16 @@ const Footer = () => {
 
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-sm text-center md:text-left">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+          <p className="text-gray-500 text-sm">
             &copy; {new Date().getFullYear()} Sanjeevni Hospital. All rights reserved.
           </p>
-          <p className="text-gray-500 text-sm flex items-center">
-            Made with <Heart className="w-4 h-4 text-red-500 mx-1" /> for Better Healthcare
-          </p>
+          <div className="text-gray-500 text-sm flex flex-wrap items-center justify-center md:justify-end gap-1.5">
+            <span>Powered by</span>
+            <a href="https://ashbit.in" target="_blank" rel="noreferrer" className="text-teal-400 font-bold hover:underline tracking-wide">ashbit.in</a>
+            <span className="mx-2 text-gray-700 hidden sm:inline">|</span>
+            <span className="flex items-center">Made with <Heart className="w-3.5 h-3.5 text-red-500 mx-1 flex-shrink-0" /> for Better Healthcare</span>
+          </div>
         </div>
       </div>
     </footer>

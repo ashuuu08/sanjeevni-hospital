@@ -59,7 +59,7 @@ const ContactPage = () => (
           <div className="bg-gray-200 rounded-3xl overflow-hidden aspect-video relative shadow-inner">
             <iframe 
               title="Sanjeevni Hospital Location" 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.5186640605923!2d81.6859346!3d23.102867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3987bf0015555555%3A0x3987bf0015555555!2sAnuppur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.570535492257!2d81.69248581023533!3d23.120570379051412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3987b314d76bcc95%3A0x82321587d280a24d!2sSANJEEVANI%20HOSPITAL%20ANUPPUR!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
               className="absolute inset-0 w-full h-full border-0"
               allowFullScreen="" 
               loading="lazy" 
